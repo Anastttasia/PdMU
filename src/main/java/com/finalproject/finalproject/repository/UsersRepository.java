@@ -6,4 +6,5 @@ import com.finalproject.finalproject.model.UserModel;
 
 public interface UsersRepository extends JpaRepository<UserModel, String> {
     UserModel findByEmail(String email);
+    UserModel findByUserId(Integer userId);
 }

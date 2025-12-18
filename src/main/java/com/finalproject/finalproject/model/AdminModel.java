@@ -5,14 +5,14 @@ import jakarta.persistence.*;
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
-@Table(name = "users")
-public class UserModel {
+@Table(name = "admins")
+public class AdminModel {
 
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
-    @Column(name = "user_id")
-    private Integer userId;
+    @Column(name = "admin_id")
+    private Integer adminId;
 
     @Column(name = "email")
     private String email;
@@ -20,7 +20,7 @@ public class UserModel {
     @Column(name = "password_hash")
     private Integer password_hash;
 
-    public Integer getUserId() { return this.userId; }
+    public Integer getAdminId() { return this.adminId; }
 
     public String getEmail() {
         return this.email;
@@ -36,8 +36,4 @@ public class UserModel {
         this.password_hash = _password_hash;
     }
 
-    @Override
-    public String toString() {
-        return "Product [userId=" + userId + ", email=" + email + ", password_hash=" + password_hash + "]";
-    }
 }

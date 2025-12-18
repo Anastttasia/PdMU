@@ -21,20 +21,12 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-
-
-
-
 @SpringBootApplication
 public class FinalprojectApplication {
-
-
 
 	public static void main(String[] args) {
 		SpringApplication.run(FinalprojectApplication.class, args);
 
 	}
-
-
 
 }

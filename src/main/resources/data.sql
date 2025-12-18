@@ -1,9 +1,7 @@
-INSERT INTO visa_application (user_id, state, comment) VALUES (1, 2, 'Отсутсвует виза.')
-INSERT INTO visa_application (user_id, state, comment) VALUES (1, 1, 'Все хорошо.')
-INSERT INTO visa_application (user_id, state, comment) VALUES (1, 2, 'Уточнить прописку.')
-INSERT INTO visa_application (user_id, state, comment) VALUES (1, 2, 'Предоставить повторно документ.')
-INSERT INTO visa_application (user_id, state, comment) VALUES (1, 2, 'Прийти лично.')
-INSERT INTO visa_application (user_id, state, comment) VALUES (1, 0, 'Принято к работе.')
+--мигранты
+INSERT INTO migrants (name, passport, citizenship) VALUES ('Богданчук Николай Николаевич', 'МР 1234567', 'Беларусь')
+INSERT INTO migrants (name, passport, citizenship) VALUES ('Ахметова Айгул Николаевич', 'N 1234567', 'Казахстан')
 
-INSERT INTO users (email, password_hash) VALUES ('123@ggg', 50643)
-INSERT INTO admins (email, password_hash) VALUES ('1234@ggg', 50643)
+--админы
+--50643 - хэш от 333
+INSERT INTO admins (email, password_hash) VALUES ('testadmin@gmail.com', 50643)

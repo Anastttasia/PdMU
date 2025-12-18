@@ -8,4 +8,5 @@ import java.util.ArrayList;
 public interface VisaApplicationRepository extends JpaRepository<VisaApplicationModel, String> {
 
     ArrayList<VisaApplicationModel> findByUserId(Integer user_id);
+    VisaApplicationModel findById(Integer id);
 }
